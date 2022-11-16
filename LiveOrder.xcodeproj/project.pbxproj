@@ -8,17 +8,87 @@
 
 /* Begin PBXBuildFile section */
 		087D95F0292313AF005679C1 /* LiveOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D95EF292313AF005679C1 /* LiveOrderApp.swift */; };
-		087D95F2292313AF005679C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D95F1292313AF005679C1 /* ContentView.swift */; };
+		087D95F2292313AF005679C1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D95F1292313AF005679C1 /* MainView.swift */; };
 		087D95F4292313AF005679C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087D95F3292313AF005679C1 /* Assets.xcassets */; };
 		087D95F7292313AF005679C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087D95F6292313AF005679C1 /* Preview Assets.xcassets */; };
+		087D95FE292317BC005679C1 /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D95FD292317BC005679C1 /* UserNotification.swift */; };
+		087D9600292317D3005679C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D95FF292317D3005679C1 /* AppDelegate.swift */; };
+		087D960229231896005679C1 /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D960129231896005679C1 /* DeviceToken.swift */; };
+		087D960A2923192F005679C1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087D96092923192E005679C1 /* WidgetKit.framework */; };
+		087D960C2923192F005679C1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087D960B2923192F005679C1 /* SwiftUI.framework */; };
+		087D960F2923192F005679C1 /* LiveOrderWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D960E2923192F005679C1 /* LiveOrderWidgetBundle.swift */; };
+		087D96112923192F005679C1 /* LiveOrderWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D96102923192F005679C1 /* LiveOrderWidgetLiveActivity.swift */; };
+		087D96132923192F005679C1 /* LiveOrderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D96122923192F005679C1 /* LiveOrderWidget.swift */; };
+		087D96152923192F005679C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087D96142923192F005679C1 /* Assets.xcassets */; };
+		087D96192923192F005679C1 /* LiveOrderWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 087D96072923192E005679C1 /* LiveOrderWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		087D962029231B8B005679C1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D961F29231B8B005679C1 /* ProgressBar.swift */; };
+		087D962229231BB4005679C1 /* ProgressSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962129231BB4005679C1 /* ProgressSection.swift */; };
+		087D962429231BCF005679C1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962329231BCF005679C1 /* OrderView.swift */; };
+		087D962529231CAB005679C1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962329231BCF005679C1 /* OrderView.swift */; };
+		087D962629231CAE005679C1 /* ProgressSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962129231BB4005679C1 /* ProgressSection.swift */; };
+		087D962729231CB1005679C1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D961F29231B8B005679C1 /* ProgressBar.swift */; };
+		087D962D29231F92005679C1 /* OrderControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962C29231F92005679C1 /* OrderControls.swift */; };
+		087D962F29231FAA005679C1 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D962E29231FAA005679C1 /* ControlButton.swift */; };
+		087D9631292320E1005679C1 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9630292320E1005679C1 /* ActivityManager.swift */; };
+		087D9632292320E1005679C1 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9630292320E1005679C1 /* ActivityManager.swift */; };
+		087D9634292324E3005679C1 /* LiveOrderWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9633292324E3005679C1 /* LiveOrderWidgetAttributes.swift */; };
+		087D9635292324E3005679C1 /* LiveOrderWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D9633292324E3005679C1 /* LiveOrderWidgetAttributes.swift */; };
+		08D7199229233CE500242EE8 /* OrderStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D7199129233CE500242EE8 /* OrderStep.swift */; };
+		08D7199329233CF100242EE8 /* OrderStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D7199129233CE500242EE8 /* OrderStep.swift */; };
+		08D719942923433600242EE8 /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087D960129231896005679C1 /* DeviceToken.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		087D96172923192F005679C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087D95E4292313AF005679C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087D96062923192E005679C1;
+			remoteInfo = LiveOrderWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		087D961D2923192F005679C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				087D96192923192F005679C1 /* LiveOrderWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		087D95EC292313AF005679C1 /* LiveOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		087D95EF292313AF005679C1 /* LiveOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrderApp.swift; sourceTree = "<group>"; };
-		087D95F1292313AF005679C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		087D95F1292313AF005679C1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		087D95F3292313AF005679C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		087D95F6292313AF005679C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		087D95FD292317BC005679C1 /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
+		087D95FF292317D3005679C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		087D960129231896005679C1 /* DeviceToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceToken.swift; sourceTree = "<group>"; };
+		087D96072923192E005679C1 /* LiveOrderWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveOrderWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		087D96092923192E005679C1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		087D960B2923192F005679C1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		087D960E2923192F005679C1 /* LiveOrderWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrderWidgetBundle.swift; sourceTree = "<group>"; };
+		087D96102923192F005679C1 /* LiveOrderWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrderWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		087D96122923192F005679C1 /* LiveOrderWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrderWidget.swift; sourceTree = "<group>"; };
+		087D96142923192F005679C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		087D96162923192F005679C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087D961E29231A6B005679C1 /* LiveOrder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveOrder.entitlements; sourceTree = "<group>"; };
+		087D961F29231B8B005679C1 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		087D962129231BB4005679C1 /* ProgressSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSection.swift; sourceTree = "<group>"; };
+		087D962329231BCF005679C1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		087D962C29231F92005679C1 /* OrderControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderControls.swift; sourceTree = "<group>"; };
+		087D962E29231FAA005679C1 /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
+		087D9630292320E1005679C1 /* ActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		087D9633292324E3005679C1 /* LiveOrderWidgetAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrderWidgetAttributes.swift; sourceTree = "<group>"; };
+		08D7199129233CE500242EE8 /* OrderStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStep.swift; sourceTree = "<group>"; };
+		08D719952923D3E800242EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +99,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		087D96042923192E005679C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087D960C2923192F005679C1 /* SwiftUI.framework in Frameworks */,
+				087D960A2923192F005679C1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				087D95EE292313AF005679C1 /* LiveOrder */,
+				087D960D2923192F005679C1 /* LiveOrderWidget */,
+				087D96082923192E005679C1 /* Frameworks */,
 				087D95ED292313AF005679C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				087D95EC292313AF005679C1 /* LiveOrder.app */,
+				087D96072923192E005679C1 /* LiveOrderWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +133,13 @@
 		087D95EE292313AF005679C1 /* LiveOrder */ = {
 			isa = PBXGroup;
 			children = (
+				08D719952923D3E800242EE8 /* Info.plist */,
+				087D961E29231A6B005679C1 /* LiveOrder.entitlements */,
+				087D95FF292317D3005679C1 /* AppDelegate.swift */,
 				087D95EF292313AF005679C1 /* LiveOrderApp.swift */,
-				087D95F1292313AF005679C1 /* ContentView.swift */,
+				08D7199129233CE500242EE8 /* OrderStep.swift */,
+				087D962A29231D38005679C1 /* Notification */,
+				087D962929231CF4005679C1 /* Views */,
 				087D95F3292313AF005679C1 /* Assets.xcassets */,
 				087D95F5292313AF005679C1 /* Preview Content */,
 			);
@@ -67,6 +154,67 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		087D96082923192E005679C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				087D96092923192E005679C1 /* WidgetKit.framework */,
+				087D960B2923192F005679C1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		087D960D2923192F005679C1 /* LiveOrderWidget */ = {
+			isa = PBXGroup;
+			children = (
+				087D960E2923192F005679C1 /* LiveOrderWidgetBundle.swift */,
+				087D96102923192F005679C1 /* LiveOrderWidgetLiveActivity.swift */,
+				087D96122923192F005679C1 /* LiveOrderWidget.swift */,
+				087D9630292320E1005679C1 /* ActivityManager.swift */,
+				087D9633292324E3005679C1 /* LiveOrderWidgetAttributes.swift */,
+				087D96142923192F005679C1 /* Assets.xcassets */,
+				087D96162923192F005679C1 /* Info.plist */,
+			);
+			path = LiveOrderWidget;
+			sourceTree = "<group>";
+		};
+		087D962829231CB6005679C1 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				087D961F29231B8B005679C1 /* ProgressBar.swift */,
+				087D962129231BB4005679C1 /* ProgressSection.swift */,
+				087D962329231BCF005679C1 /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		087D962929231CF4005679C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				087D962B29231F7F005679C1 /* MainView */,
+				087D962829231CB6005679C1 /* OrderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		087D962A29231D38005679C1 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				087D95FD292317BC005679C1 /* UserNotification.swift */,
+				087D960129231896005679C1 /* DeviceToken.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		087D962B29231F7F005679C1 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				087D95F1292313AF005679C1 /* MainView.swift */,
+				087D962C29231F92005679C1 /* OrderControls.swift */,
+				087D962E29231FAA005679C1 /* ControlButton.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +225,34 @@
 				087D95E8292313AF005679C1 /* Sources */,
 				087D95E9292313AF005679C1 /* Frameworks */,
 				087D95EA292313AF005679C1 /* Resources */,
+				087D961D2923192F005679C1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				087D96182923192F005679C1 /* PBXTargetDependency */,
 			);
 			name = LiveOrder;
 			productName = LiveOrder;
 			productReference = 087D95EC292313AF005679C1 /* LiveOrder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		087D96062923192E005679C1 /* LiveOrderWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087D961A2923192F005679C1 /* Build configuration list for PBXNativeTarget "LiveOrderWidgetExtension" */;
+			buildPhases = (
+				087D96032923192E005679C1 /* Sources */,
+				087D96042923192E005679C1 /* Frameworks */,
+				087D96052923192E005679C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveOrderWidgetExtension;
+			productName = LiveOrderWidgetExtension;
+			productReference = 087D96072923192E005679C1 /* LiveOrderWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +265,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					087D95EB292313AF005679C1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					087D96062923192E005679C1 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -116,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				087D95EB292313AF005679C1 /* LiveOrder */,
+				087D96062923192E005679C1 /* LiveOrderWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		087D96052923192E005679C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087D96152923192F005679C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +316,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087D95F2292313AF005679C1 /* ContentView.swift in Sources */,
+				087D9600292317D3005679C1 /* AppDelegate.swift in Sources */,
+				087D962429231BCF005679C1 /* OrderView.swift in Sources */,
+				087D95F2292313AF005679C1 /* MainView.swift in Sources */,
 				087D95F0292313AF005679C1 /* LiveOrderApp.swift in Sources */,
+				087D960229231896005679C1 /* DeviceToken.swift in Sources */,
+				087D9634292324E3005679C1 /* LiveOrderWidgetAttributes.swift in Sources */,
+				087D962D29231F92005679C1 /* OrderControls.swift in Sources */,
+				087D9631292320E1005679C1 /* ActivityManager.swift in Sources */,
+				08D7199229233CE500242EE8 /* OrderStep.swift in Sources */,
+				087D962029231B8B005679C1 /* ProgressBar.swift in Sources */,
+				087D962F29231FAA005679C1 /* ControlButton.swift in Sources */,
+				087D95FE292317BC005679C1 /* UserNotification.swift in Sources */,
+				087D962229231BB4005679C1 /* ProgressSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087D96032923192E005679C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087D960F2923192F005679C1 /* LiveOrderWidgetBundle.swift in Sources */,
+				08D7199329233CF100242EE8 /* OrderStep.swift in Sources */,
+				087D9635292324E3005679C1 /* LiveOrderWidgetAttributes.swift in Sources */,
+				08D719942923433600242EE8 /* DeviceToken.swift in Sources */,
+				087D962629231CAE005679C1 /* ProgressSection.swift in Sources */,
+				087D962529231CAB005679C1 /* OrderView.swift in Sources */,
+				087D9632292320E1005679C1 /* ActivityManager.swift in Sources */,
+				087D96112923192F005679C1 /* LiveOrderWidgetLiveActivity.swift in Sources */,
+				087D962729231CB1005679C1 /* ProgressBar.swift in Sources */,
+				087D96132923192F005679C1 /* LiveOrderWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087D96182923192F005679C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 087D96062923192E005679C1 /* LiveOrderWidgetExtension */;
+			targetProxy = 087D96172923192F005679C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		087D95F8292313AF005679C1 /* Debug */ = {
@@ -262,14 +477,18 @@
 		087D95FB292313AF005679C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiveOrder/LiveOrder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LiveOrder/Preview Content\"";
 				DEVELOPMENT_TEAM = CPX7FN2K89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOrder/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,14 +510,18 @@
 		087D95FC292313AF005679C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiveOrder/LiveOrder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LiveOrder/Preview Content\"";
 				DEVELOPMENT_TEAM = CPX7FN2K89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOrder/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +534,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.LiveOrder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		087D961B2923192F005679C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOrderWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveOrderWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.LiveOrder.LiveOrderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		087D961C2923192F005679C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveOrderWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveOrderWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.erikflores.LiveOrder.LiveOrderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +611,15 @@
 			buildConfigurations = (
 				087D95FB292313AF005679C1 /* Debug */,
 				087D95FC292313AF005679C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		087D961A2923192F005679C1 /* Build configuration list for PBXNativeTarget "LiveOrderWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087D961B2923192F005679C1 /* Debug */,
+				087D961C2923192F005679C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct LiveOrderApp: App {
+    @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
